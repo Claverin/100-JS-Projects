@@ -1,7 +1,5 @@
 const get_meal = document.getElementById("get_meal");
-const meal = document.getElementById("meal");
 const api_url = 'https://www.themealdb.com/api/json/v1/1/random.php';
-var createMeal;
 
 get_meal.addEventListener('click', () => {
     fetch(api_url)
@@ -13,13 +11,16 @@ get_meal.addEventListener('click', () => {
     .catch (e => {
         console.warn(e);
     });
+});
 
+const createMeal = meal => {
+	const ingredients = [];
 
-
-
-
-
-
-
-
-})
+	for (let i = 1; i <= 20; i++) {
+		if (meal['strIngredient${i}']) {
+            console.log[meal['strIngredient${i}']];
+		} else {
+			break;
+		}
+	}
+};
