@@ -1,7 +1,49 @@
 *{
     margin:0 auto;
     padding:0;
+    text-align: center;
+    cursor:default;
 }
 html,body{
     width:100%;
+}
+.mood:hover{
+    background-color: whitesmoke;
+}
+.mood:active{
+    background-color: ghostwhite;
+}
+.mood{
+    font-weight: bold;
+    cursor: pointer;
+}
+#mood1{
+    color:red;
+}
+#mood2{
+    color:orange;
+}
+#mood3{
+    color:rgb(163, 163, 10);
+}
+#mood4{
+    color: green;
+}
+.calendarDay{
+    cursor: pointer;
+}
+.calendarDay:active{
+    background-color: whitesmoke;
+}
+.selected{
+    background-color: wheat;
+}
+
+.calendarMonth{
+    font-weight: bold;
+}
+
+.calendarDaysName{
+    font-size: 1.3vh;
+    font-weight: bold;
 }
